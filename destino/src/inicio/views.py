@@ -8,4 +8,5 @@ def myHomeView(request, *args, **kwargs):
     return render(request,"home.html",{})
 
 def anotherView(request):
-    return HttpResponse('<h1>Sólo otra página</h1>')
+    context = {'mensaje': 'Victor'}
+    return render(request, 'reemplazame.html', context)

@@ -21,6 +21,6 @@ from inicio.views import anotherView
 
 urlpatterns = [
     path('', myHomeView, name='Página de Inicio'),
-    path('another/', anotherView),
+    path('another/', anotherView, name='Pagina de Reemplazo'),
     path('admin/', admin.site.urls),
 ]
